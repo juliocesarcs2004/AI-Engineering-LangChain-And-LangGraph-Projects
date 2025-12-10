@@ -1,0 +1,10 @@
+
+# Env
+.env
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/Setting Up the Env 03-checkpoint.ipynb
+Setting Up the Env 03.ipynb
