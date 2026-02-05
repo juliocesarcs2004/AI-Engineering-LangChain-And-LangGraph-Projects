@@ -27,6 +27,13 @@ This repository contains a collection of educational notebooks exploring the fun
 ### Chat Model
 - **ChatOpenAI.ipynb** - Working with the ChatOpenAI model
 
+### Chains and Runnables
+- **The Runnable and RunnableSequence Classes.ipynb** - Foundation of LangChain's functional composition model
+- **Piping a Prompt Model and an Output Parser.ipynb** - Composing chains using the pipe operator
+- **Piping Chains and the RunnablePassthrough Class.ipynb** - Advanced piping patterns with passthrough functionality
+- **Streaming.ipynb** - Real-time streaming of responses from chains
+- **Batching.ipynb** - Batch processing multiple inputs efficiently
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -94,13 +101,28 @@ Covers few-shot learning techniques in LangChain. Learn to define example conver
 ### 8. ChatOpenAI.ipynb
 A comprehensive guide to the ChatOpenAI wrapper in LangChain. Demonstrates how to instantiate the ChatOpenAI model, configure model parameters (temperature, seed, max_tokens), invoke the model with simple prompts, and access response content for further processing.
 
-### 9. String Output Parser.ipynb
+### 9. The Runnable and RunnableSequence Classes.ipynb
+Introduces the core building blocks of LangChain's compositional system. Learn how Runnable objects enable functional composition, understand RunnableSequence for chaining operations, invoke multiple steps in sequence, and leverage the invoke() and batch() methods for both single and batch processing.
+
+### 10. Piping a Prompt Model and an Output Parser.ipynb
+Demonstrates the elegant pipe operator syntax for composing chains. This notebook shows how to use the LCEL (LangChain Expression Language) | operator to connect prompts, models, and parsers, create reusable pipeline components, and simplify chain definitions compared to RunnableSequence.
+
+### 11. Piping Chains and the RunnablePassthrough Class.ipynb
+Covers advanced piping patterns and the RunnablePassthrough utility. Learn to use RunnablePassthrough for conditional pipeline logic, compose complex chains with multiple branches, pass through data unchanged in specific pipeline stages, and build sophisticated data processing workflows.
+
+### 12. Streaming.ipynb
+Explores real-time streaming capabilities for chain outputs. This notebook demonstrates how to use the stream() method for progressive token-by-token responses, integrate streaming with different components, monitor real-time progress in long-running operations, and optimize user experience with immediate feedback.
+
+### 13. Batching.ipynb
+Covers efficient batch processing of multiple inputs. Learn to use the batch() method for parallel processing multiple prompts, optimize throughput for bulk operations, handle batch results efficiently, and compare performance between single, streaming, and batch execution modes.
+
+### 14. String Output Parser.ipynb
 Learn to parse model outputs into plain strings. Shows how to use StrOutputParser to extract text content from ChatOpenAI responses, chain parsers with model invocations, handle complex response objects, and clean output for downstream processing or display.
 
-### 10. Comma-Separated List Output Parser.ipynb
+### 15. Comma-Separated List Output Parser.ipynb
 Demonstrates list parsing from model outputs. This notebook teaches how to use CommaSeparatedListOutputParser to automatically split responses into list items, format instructions for models, parse structured comma-separated data, and work with the parsed list output programmatically.
 
-### 11. Datetime Output Parser.ipynb
+### 16. Datetime Output Parser.ipynb
 Covers specialized parsing for temporal data. Learn to use DatetimeOutputParser for extracting dates and times from model responses, format datetime instructions for prompts, parse natural language dates, and convert model outputs into Python datetime objects for calculations and comparisons.
 
 ## 🔗 External Resources
@@ -115,11 +137,5 @@ Covers specialized parsing for temporal data. Learn to use DatetimeOutputParser 
 - Use a virtual environment to avoid dependency conflicts
 - Some notebooks may consume OpenAI API credits
 
-## 📄 License
-
-This project is provided as educational material.
-
----
-
-**Author:** Júlio César  
-**Last updated:** December 2025
+**Author:** Júlio César
+**Last updated:** February 2026
