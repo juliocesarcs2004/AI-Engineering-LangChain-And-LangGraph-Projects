@@ -27,6 +27,22 @@ This repository contains a collection of educational notebooks exploring the fun
 ### Chat Model
 - **ChatOpenAI.ipynb** - Working with the ChatOpenAI model
 
+### Indexing
+- **Indexing Creating a Chroma Vectorstore.ipynb** - Build a vectorstore for document embeddings
+- **Indexing Document Loading with DOCX2TXT Loader.ipynb** - Load DOCX documents into LangChain
+- **Indexing Document Splitting with Character Text Splitter Code Along.ipynb** - Split documents into chunks for retrieval
+- **Indexing Document with PyPDFLoader.ipynb** - Load PDF documents and prepare them for indexing
+- **Indexing Inspecting and Managing Documents in a Vectorstore.ipynb** - Inspect and manage stored embeddings and metadata
+- **Indexing Text Embedding with OpenAI.ipynb** - Create embeddings with OpenAI for downstream retrieval
+
+### Retrieval
+- **Retrieval Maximal Marginal Relevance Search.ipynb** - Perform MMR-based similarity search
+- **Retrieval Similarity Search.ipynb** - Use similarity search to retrieve relevant documents
+- **Retrieval Vectorstore-Backed Retriever.ipynb** - Build a retriever backed by a vectorstore
+
+### Generation
+- **Generation Generating a Response.ipynb** - Generate responses from retrieved context and prompts
+
 ### Chains and Runnables
 - **The Runnable and RunnableSequence Classes.ipynb** - Foundation of LangChain's functional composition model
 - **Piping a Prompt Model and an Output Parser.ipynb** - Composing chains using the pipe operator
@@ -116,7 +132,37 @@ Explores real-time streaming capabilities for chain outputs. This notebook demon
 ### 13. Batching.ipynb
 Covers efficient batch processing of multiple inputs. Learn to use the batch() method for parallel processing multiple prompts, optimize throughput for bulk operations, handle batch results efficiently, and compare performance between single, streaming, and batch execution modes.
 
-### 14. String Output Parser.ipynb
+### 14. Indexing Creating a Chroma Vectorstore.ipynb
+Introduces vectorstore creation with Chroma. Learn how to build and query a vectorstore from document embeddings, manage collections, and use the vectorstore for retrieval workflows.
+
+### 15. Indexing Document Loading with DOCX2TXT Loader.ipynb
+Shows how to load DOCX documents into LangChain. Learn to extract text from DOCX files and prepare documents for splitting and embedding.
+
+### 16. Indexing Document Splitting with Character Text Splitter Code Along.ipynb
+Covers document chunking strategies. Learn to split long documents into meaningful chunks using the Character Text Splitter and prepare them for embedding and retrieval.
+
+### 17. Indexing Document with PyPDFLoader.ipynb
+Demonstrates PDF ingestion in LangChain. Learn to load PDFs, extract text content, and prepare PDF documents for indexing and vector search.
+
+### 18. Indexing Inspecting and Managing Documents in a Vectorstore.ipynb
+Explains vectorstore inspection and maintenance. Learn how to explore stored embeddings, metadata, and document contents inside a vectorstore.
+
+### 19. Indexing Text Embedding with OpenAI.ipynb
+Covers OpenAI-based text embeddings. Learn to create embeddings with OpenAI, add them to a vectorstore, and use them for semantic retrieval.
+
+### 20. Retrieval Maximal Marginal Relevance Search.ipynb
+Shows retrieval with maximal marginal relevance. Learn how MMR improves diversity in search results and how to apply it to document retrieval.
+
+### 21. Retrieval Similarity Search.ipynb
+Demonstrates similarity-based retrieval. Learn to use similarity search to find relevant documents based on semantic embeddings and query similarity.
+
+### 22. Retrieval Vectorstore-Backed Retriever.ipynb
+Covers building a retriever backed by a vectorstore. Learn how to wire a retriever into a LangChain pipeline for question answering and context retrieval.
+
+### 23. Generation Generating a Response.ipynb
+Explains response generation from retrieved context. Learn to combine retrieval results with prompt templates and model invocations to generate informed answers.
+
+### 24. String Output Parser.ipynb
 Learn to parse model outputs into plain strings. Shows how to use StrOutputParser to extract text content from ChatOpenAI responses, chain parsers with model invocations, handle complex response objects, and clean output for downstream processing or display.
 
 ### 15. Comma-Separated List Output Parser.ipynb
