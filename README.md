@@ -171,6 +171,36 @@ Demonstrates list parsing from model outputs. This notebook teaches how to use C
 ### 16. Datetime Output Parser.ipynb
 Covers specialized parsing for temporal data. Learn to use DatetimeOutputParser for extracting dates and times from model responses, format datetime instructions for prompts, parse natural language dates, and convert model outputs into Python datetime objects for calculations and comparisons.
 
+### 17. Conditional Edges Defining Nodes and a Routing Function.ipynb
+Introduces the concept of conditional branching in LangGraph. This notebook shows how to define nodes, build routing logic, and guide the execution flow of a graph based on the state or model output.
+
+### 18. First Graph Importing Relevant Classes.ipynb
+Provides a first practical example of building a LangGraph workflow. It demonstrates how to import the main classes, create a simple graph, and connect nodes to form a functional pipeline.
+
+### 19. The MessagesState Class.ipynb
+Explains how to represent conversational state in LangGraph using the MessagesState class. This notebook is essential for understanding how message history is stored and passed between graph nodes.
+
+### 20. The Annotated Construct and Reducer Functions.ipynb
+Covers state management patterns in LangGraph. Learn how to use Annotated with reducer functions to combine and update values safely across graph executions.
+
+### 21. Long-Term Memory with SQLite.ipynb
+Shows how to implement persistent memory for agents using SQLite. This example is useful for keeping conversation context across sessions and building more stateful applications.
+
+### 22. Short-Term Memory with the InMemorySaver Class.ipynb
+Demonstrates lightweight, in-memory persistence for short-lived conversational state. It is ideal for testing workflows and building temporary memory behavior in graph-based applications.
+
+### 23. Summarizing Messages.ipynb
+Explores techniques for condensing conversation history into compact summaries. This notebook is relevant for improving context efficiency and reducing token usage in long-running agents.
+
+### 24. The RemoveMessages Class.ipynb
+Introduces message pruning strategies in LangGraph. Learn how to remove outdated or irrelevant messages from state to keep the conversation context manageable.
+
+### 25. The StateSnapshot Class.ipynb
+Covers how to capture and inspect graph state snapshots. This notebook helps understand state evolution over time and debug workflows more effectively.
+
+### 26. Trimming Messages.ipynb
+Shows how to trim message history to a controlled size. It is a practical approach for maintaining context windows and improving the performance of chat-based agents.
+
 ## 🔗 External Resources
 
 - [LangChain Documentation](https://python.langchain.com/)
@@ -184,4 +214,4 @@ Covers specialized parsing for temporal data. Learn to use DatetimeOutputParser 
 - Some notebooks may consume OpenAI API credits
 
 **Author:** Júlio César
-**Last updated:** February 2026
+**Last updated:** July 2026
